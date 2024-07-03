@@ -1,4 +1,11 @@
 services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      OTLP_ENDPOINT: jaeger
+
   jaeger:
     image: jaegertracing/all-in-one:latest
     ports:

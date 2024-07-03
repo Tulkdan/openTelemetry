@@ -34,7 +34,7 @@ fastify.get<{ Querystring: { rolls?: number } }>('/rolldice', (request, reply) =
   })
 })
 
-fastify.listen({ port: 3000 }, (_, address) => {
+fastify.listen({ port: 3000, host: '0.0.0.0' }, (_, address) => {
   console.log(`Listening in port ${address}`)
 })
 
