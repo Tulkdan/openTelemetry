@@ -1,0 +1,13 @@
+* OpenTelemetry
+
+This is an experiment to test [[https://opentelemetry.io/][OpenTelemetry]] and [[https://www.jaegertracing.io/][jaeger]] to see how to implement telemetry in a project (specific in a project using NodeJS)
+
+** How to run
+
+Simply run the docker compose file that will build and run both the server and jaeger to collect the telemetry and showcase in a UI.
+
+The server will be in port =3000= and jaeger will be able to reach at port =16686= in the browser.
+
+Then, just make some requests into the endpoints =/= and =/rolldice=.
+
+(In case you prefer, in the =requests= directory has a file to make the requests using [[https://hurl.dev/][hurl]]).
